@@ -3,15 +3,13 @@
   "name": "Do Nothing Extension",
   "version": "1.0",
   "description": "This extension opens a 1-pixel popup.",
-  "permissions": [],
+  "permissions": [
+    "browser"
+  ],
   "icons": {
     "16": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
-  },
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
   },
   "browser_action": {
     "default_popup": "popup.html"
