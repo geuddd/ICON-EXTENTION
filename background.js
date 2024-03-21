@@ -7,4 +7,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     left: screen.availLeft - 1000,
     top: screen.availTop - 1000
   });
+
+  // Set badge text to a small dot
+  chrome.browserAction.setBadgeText({ text: "." });
 });
